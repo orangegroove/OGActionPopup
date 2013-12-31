@@ -69,6 +69,7 @@
 		093F537E18719C91003926C1 /* lorempixel3@2x.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "lorempixel3@2x.jpeg"; sourceTree = "<group>"; };
 		093F537F18719C91003926C1 /* lorempixel4@2x.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "lorempixel4@2x.jpeg"; sourceTree = "<group>"; };
 		093F538018719C91003926C1 /* lorempixel5@2x.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "lorempixel5@2x.jpeg"; sourceTree = "<group>"; };
+		09F73CD81872D71400E671A7 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				093F5370186F61CC003926C1 /* OGActionPopup.podspec */,
+				09F73CD81872D71400E671A7 /* README.md */,
 				093F536F186F617D003926C1 /* OGActionPopup */,
 				093F5346186F6177003926C1 /* OGActionPopupProject */,
 				093F535F186F6177003926C1 /* OGActionPopupProjectTests */,
