@@ -1,0 +1,519 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		093F5341186F6177003926C1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 093F5340186F6177003926C1 /* Foundation.framework */; };
+		093F5343186F6177003926C1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 093F5342186F6177003926C1 /* CoreGraphics.framework */; };
+		093F5345186F6177003926C1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 093F5344186F6177003926C1 /* UIKit.framework */; };
+		093F534B186F6177003926C1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 093F5349186F6177003926C1 /* InfoPlist.strings */; };
+		093F534D186F6177003926C1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 093F534C186F6177003926C1 /* main.m */; };
+		093F5351186F6177003926C1 /* OGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 093F5350186F6177003926C1 /* OGAppDelegate.m */; };
+		093F5353186F6177003926C1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 093F5352186F6177003926C1 /* Images.xcassets */; };
+		093F535A186F6177003926C1 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 093F5359186F6177003926C1 /* XCTest.framework */; };
+		093F535B186F6177003926C1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 093F5340186F6177003926C1 /* Foundation.framework */; };
+		093F535C186F6177003926C1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 093F5344186F6177003926C1 /* UIKit.framework */; };
+		093F5364186F6177003926C1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 093F5362186F6177003926C1 /* InfoPlist.strings */; };
+		093F5366186F6177003926C1 /* OGActionPopupProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 093F5365186F6177003926C1 /* OGActionPopupProjectTests.m */; };
+		093F5373186F6209003926C1 /* OGActionPopupButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 093F5372186F6209003926C1 /* OGActionPopupButton.m */; };
+		093F5376186F6216003926C1 /* OGActionPopup.m in Sources */ = {isa = PBXBuildFile; fileRef = 093F5375186F6216003926C1 /* OGActionPopup.m */; };
+		093F537A18716CBA003926C1 /* OGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 093F537918716CBA003926C1 /* OGViewController.m */; };
+		093F538118719C91003926C1 /* lorempixel1@2x.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 093F537C18719C91003926C1 /* lorempixel1@2x.jpeg */; };
+		093F538218719C91003926C1 /* lorempixel2@2x.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 093F537D18719C91003926C1 /* lorempixel2@2x.jpeg */; };
+		093F538318719C91003926C1 /* lorempixel3@2x.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 093F537E18719C91003926C1 /* lorempixel3@2x.jpeg */; };
+		093F538418719C91003926C1 /* lorempixel4@2x.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 093F537F18719C91003926C1 /* lorempixel4@2x.jpeg */; };
+		093F538518719C91003926C1 /* lorempixel5@2x.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 093F538018719C91003926C1 /* lorempixel5@2x.jpeg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		093F535D186F6177003926C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 093F5335186F6177003926C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 093F533C186F6177003926C1;
+			remoteInfo = OGActionPopupProject;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		093F533D186F6177003926C1 /* OGActionPopupProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OGActionPopupProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		093F5340186F6177003926C1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		093F5342186F6177003926C1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		093F5344186F6177003926C1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		093F5348186F6177003926C1 /* OGActionPopupProject-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OGActionPopupProject-Info.plist"; sourceTree = "<group>"; };
+		093F534A186F6177003926C1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		093F534C186F6177003926C1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		093F534E186F6177003926C1 /* OGActionPopupProject-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OGActionPopupProject-Prefix.pch"; sourceTree = "<group>"; };
+		093F534F186F6177003926C1 /* OGAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OGAppDelegate.h; sourceTree = "<group>"; };
+		093F5350186F6177003926C1 /* OGAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OGAppDelegate.m; sourceTree = "<group>"; };
+		093F5352186F6177003926C1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		093F5358186F6177003926C1 /* OGActionPopupProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OGActionPopupProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		093F5359186F6177003926C1 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		093F5361186F6177003926C1 /* OGActionPopupProjectTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OGActionPopupProjectTests-Info.plist"; sourceTree = "<group>"; };
+		093F5363186F6177003926C1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		093F5365186F6177003926C1 /* OGActionPopupProjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OGActionPopupProjectTests.m; sourceTree = "<group>"; };
+		093F5370186F61CC003926C1 /* OGActionPopup.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = OGActionPopup.podspec; sourceTree = "<group>"; };
+		093F5371186F6209003926C1 /* OGActionPopupButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OGActionPopupButton.h; path = OGActionPopup/OGActionPopupButton.h; sourceTree = "<group>"; };
+		093F5372186F6209003926C1 /* OGActionPopupButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OGActionPopupButton.m; path = OGActionPopup/OGActionPopupButton.m; sourceTree = "<group>"; };
+		093F5374186F6216003926C1 /* OGActionPopup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OGActionPopup.h; path = OGActionPopup/OGActionPopup.h; sourceTree = "<group>"; };
+		093F5375186F6216003926C1 /* OGActionPopup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OGActionPopup.m; path = OGActionPopup/OGActionPopup.m; sourceTree = "<group>"; };
+		093F5377186F6222003926C1 /* OGActionPopupDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OGActionPopupDelegate.h; path = OGActionPopup/OGActionPopupDelegate.h; sourceTree = "<group>"; };
+		093F537818716CBA003926C1 /* OGViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGViewController.h; sourceTree = "<group>"; };
+		093F537918716CBA003926C1 /* OGViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGViewController.m; sourceTree = "<group>"; };
+		093F537C18719C91003926C1 /* lorempixel1@2x.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "lorempixel1@2x.jpeg"; sourceTree = "<group>"; };
+		093F537D18719C91003926C1 /* lorempixel2@2x.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "lorempixel2@2x.jpeg"; sourceTree = "<group>"; };
+		093F537E18719C91003926C1 /* lorempixel3@2x.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "lorempixel3@2x.jpeg"; sourceTree = "<group>"; };
+		093F537F18719C91003926C1 /* lorempixel4@2x.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "lorempixel4@2x.jpeg"; sourceTree = "<group>"; };
+		093F538018719C91003926C1 /* lorempixel5@2x.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "lorempixel5@2x.jpeg"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		093F533A186F6177003926C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				093F5343186F6177003926C1 /* CoreGraphics.framework in Frameworks */,
+				093F5345186F6177003926C1 /* UIKit.framework in Frameworks */,
+				093F5341186F6177003926C1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		093F5355186F6177003926C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				093F535A186F6177003926C1 /* XCTest.framework in Frameworks */,
+				093F535C186F6177003926C1 /* UIKit.framework in Frameworks */,
+				093F535B186F6177003926C1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		093F5334186F6177003926C1 = {
+			isa = PBXGroup;
+			children = (
+				093F5370186F61CC003926C1 /* OGActionPopup.podspec */,
+				093F536F186F617D003926C1 /* OGActionPopup */,
+				093F5346186F6177003926C1 /* OGActionPopupProject */,
+				093F535F186F6177003926C1 /* OGActionPopupProjectTests */,
+				093F533F186F6177003926C1 /* Frameworks */,
+				093F533E186F6177003926C1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		093F533E186F6177003926C1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				093F533D186F6177003926C1 /* OGActionPopupProject.app */,
+				093F5358186F6177003926C1 /* OGActionPopupProjectTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		093F533F186F6177003926C1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				093F5340186F6177003926C1 /* Foundation.framework */,
+				093F5342186F6177003926C1 /* CoreGraphics.framework */,
+				093F5344186F6177003926C1 /* UIKit.framework */,
+				093F5359186F6177003926C1 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		093F5346186F6177003926C1 /* OGActionPopupProject */ = {
+			isa = PBXGroup;
+			children = (
+				093F537B18719C80003926C1 /* Resources */,
+				093F5352186F6177003926C1 /* Images.xcassets */,
+				093F5347186F6177003926C1 /* Supporting Files */,
+				093F534F186F6177003926C1 /* OGAppDelegate.h */,
+				093F5350186F6177003926C1 /* OGAppDelegate.m */,
+				093F537818716CBA003926C1 /* OGViewController.h */,
+				093F537918716CBA003926C1 /* OGViewController.m */,
+			);
+			path = OGActionPopupProject;
+			sourceTree = "<group>";
+		};
+		093F5347186F6177003926C1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				093F5348186F6177003926C1 /* OGActionPopupProject-Info.plist */,
+				093F5349186F6177003926C1 /* InfoPlist.strings */,
+				093F534C186F6177003926C1 /* main.m */,
+				093F534E186F6177003926C1 /* OGActionPopupProject-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		093F535F186F6177003926C1 /* OGActionPopupProjectTests */ = {
+			isa = PBXGroup;
+			children = (
+				093F5365186F6177003926C1 /* OGActionPopupProjectTests.m */,
+				093F5360186F6177003926C1 /* Supporting Files */,
+			);
+			path = OGActionPopupProjectTests;
+			sourceTree = "<group>";
+		};
+		093F5360186F6177003926C1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				093F5361186F6177003926C1 /* OGActionPopupProjectTests-Info.plist */,
+				093F5362186F6177003926C1 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		093F536F186F617D003926C1 /* OGActionPopup */ = {
+			isa = PBXGroup;
+			children = (
+				093F5374186F6216003926C1 /* OGActionPopup.h */,
+				093F5375186F6216003926C1 /* OGActionPopup.m */,
+				093F5371186F6209003926C1 /* OGActionPopupButton.h */,
+				093F5372186F6209003926C1 /* OGActionPopupButton.m */,
+				093F5377186F6222003926C1 /* OGActionPopupDelegate.h */,
+			);
+			name = OGActionPopup;
+			sourceTree = "<group>";
+		};
+		093F537B18719C80003926C1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				093F537C18719C91003926C1 /* lorempixel1@2x.jpeg */,
+				093F537D18719C91003926C1 /* lorempixel2@2x.jpeg */,
+				093F537E18719C91003926C1 /* lorempixel3@2x.jpeg */,
+				093F537F18719C91003926C1 /* lorempixel4@2x.jpeg */,
+				093F538018719C91003926C1 /* lorempixel5@2x.jpeg */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		093F533C186F6177003926C1 /* OGActionPopupProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 093F5369186F6177003926C1 /* Build configuration list for PBXNativeTarget "OGActionPopupProject" */;
+			buildPhases = (
+				093F5339186F6177003926C1 /* Sources */,
+				093F533A186F6177003926C1 /* Frameworks */,
+				093F533B186F6177003926C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OGActionPopupProject;
+			productName = OGActionPopupProject;
+			productReference = 093F533D186F6177003926C1 /* OGActionPopupProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+		093F5357186F6177003926C1 /* OGActionPopupProjectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 093F536C186F6177003926C1 /* Build configuration list for PBXNativeTarget "OGActionPopupProjectTests" */;
+			buildPhases = (
+				093F5354186F6177003926C1 /* Sources */,
+				093F5355186F6177003926C1 /* Frameworks */,
+				093F5356186F6177003926C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				093F535E186F6177003926C1 /* PBXTargetDependency */,
+			);
+			name = OGActionPopupProjectTests;
+			productName = OGActionPopupProjectTests;
+			productReference = 093F5358186F6177003926C1 /* OGActionPopupProjectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		093F5335186F6177003926C1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = OG;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Orange Groove";
+				TargetAttributes = {
+					093F5357186F6177003926C1 = {
+						TestTargetID = 093F533C186F6177003926C1;
+					};
+				};
+			};
+			buildConfigurationList = 093F5338186F6177003926C1 /* Build configuration list for PBXProject "OGActionPopupProject" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 093F5334186F6177003926C1;
+			productRefGroup = 093F533E186F6177003926C1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				093F533C186F6177003926C1 /* OGActionPopupProject */,
+				093F5357186F6177003926C1 /* OGActionPopupProjectTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		093F533B186F6177003926C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				093F538218719C91003926C1 /* lorempixel2@2x.jpeg in Resources */,
+				093F538118719C91003926C1 /* lorempixel1@2x.jpeg in Resources */,
+				093F538518719C91003926C1 /* lorempixel5@2x.jpeg in Resources */,
+				093F534B186F6177003926C1 /* InfoPlist.strings in Resources */,
+				093F538318719C91003926C1 /* lorempixel3@2x.jpeg in Resources */,
+				093F538418719C91003926C1 /* lorempixel4@2x.jpeg in Resources */,
+				093F5353186F6177003926C1 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		093F5356186F6177003926C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				093F5364186F6177003926C1 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		093F5339186F6177003926C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				093F5373186F6209003926C1 /* OGActionPopupButton.m in Sources */,
+				093F537A18716CBA003926C1 /* OGViewController.m in Sources */,
+				093F5351186F6177003926C1 /* OGAppDelegate.m in Sources */,
+				093F5376186F6216003926C1 /* OGActionPopup.m in Sources */,
+				093F534D186F6177003926C1 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		093F5354186F6177003926C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				093F5366186F6177003926C1 /* OGActionPopupProjectTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		093F535E186F6177003926C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 093F533C186F6177003926C1 /* OGActionPopupProject */;
+			targetProxy = 093F535D186F6177003926C1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		093F5349186F6177003926C1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				093F534A186F6177003926C1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		093F5362186F6177003926C1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				093F5363186F6177003926C1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		093F5367186F6177003926C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		093F5368186F6177003926C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		093F536A186F6177003926C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OGActionPopupProject/OGActionPopupProject-Prefix.pch";
+				INFOPLIST_FILE = "OGActionPopupProject/OGActionPopupProject-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		093F536B186F6177003926C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OGActionPopupProject/OGActionPopupProject-Prefix.pch";
+				INFOPLIST_FILE = "OGActionPopupProject/OGActionPopupProject-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		093F536D186F6177003926C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/OGActionPopupProject.app/OGActionPopupProject";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OGActionPopupProject/OGActionPopupProject-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "OGActionPopupProjectTests/OGActionPopupProjectTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		093F536E186F6177003926C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/OGActionPopupProject.app/OGActionPopupProject";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OGActionPopupProject/OGActionPopupProject-Prefix.pch";
+				INFOPLIST_FILE = "OGActionPopupProjectTests/OGActionPopupProjectTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		093F5338186F6177003926C1 /* Build configuration list for PBXProject "OGActionPopupProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				093F5367186F6177003926C1 /* Debug */,
+				093F5368186F6177003926C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		093F5369186F6177003926C1 /* Build configuration list for PBXNativeTarget "OGActionPopupProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				093F536A186F6177003926C1 /* Debug */,
+				093F536B186F6177003926C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		093F536C186F6177003926C1 /* Build configuration list for PBXNativeTarget "OGActionPopupProjectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				093F536D186F6177003926C1 /* Debug */,
+				093F536E186F6177003926C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 093F5335186F6177003926C1 /* Project object */;
+}
