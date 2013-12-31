@@ -1,9 +1,25 @@
 //
 //  OGActionPopupDelegate.h
-//  OGActionPopupProject
 //
-//  Created by Jesper on 28/12/13.
-//  Copyright (c) 2013 Orange Groove. All rights reserved.
+//  Created by Jesper <jesper@orangegroove.net>
+//
+//  Permission is hereby granted, free of charge, to any person obtaining a copy
+//  of this software and associated documentation files (the "Software"), to
+//  deal in the Software without restriction, including without limitation the
+//  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+//  sell copies of the Software, and to permit persons to whom the Software is
+//  furnished to do so, subject to the following conditions:
+//
+//  The above copyright notice and this permission notice shall be included in
+//  all copies or substantial portions of the Software.
+//
+//  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+//  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+//  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+//  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+//  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+//  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+//  IN THE SOFTWARE.
 //
 
 #import <Foundation/Foundation.h>
@@ -14,19 +30,14 @@ OGActionPopup;
 @protocol OGActionPopupDelegate <NSObject>
 @optional
 
-// Called when a button is clicked. The view will be automatically dismissed after this call returns
 - (void)actionPopup:(OGActionPopup *)actionPopup clickedButtonAtIndex:(NSInteger)buttonIndex;
-
-// Called when we cancel a view (eg. the user clicks the Home button). This is not called when the user clicks the cancel button.
-// If not defined in the delegate, we simulate a click in the cancel button
 - (void)actionPopupCancel:(OGActionPopup *)actionPopup;
 
-- (void)willPresentActionPopup:(OGActionPopup *)actionPopup;  // before animation and showing view
-- (void)didPresentActionPopup:(OGActionPopup *)actionPopup;  // after animation
+- (void)willPresentActionPopup:(OGActionPopup *)actionPopup;
+- (void)didPresentActionPopup:(OGActionPopup *)actionPopup;
 
-// if button is cancel button, buttonIndex is -1
-- (void)actionPopup:(OGActionPopup *)actionPopup willDismissWithButtonIndex:(NSInteger)buttonIndex; // before animation and hiding view
-- (void)actionPopup:(OGActionPopup *)actionPopup didDismissWithButtonIndex:(NSInteger)buttonIndex;  // after animation
+- (void)actionPopup:(OGActionPopup *)actionPopup willDismissWithButtonIndex:(NSInteger)buttonIndex;
+- (void)actionPopup:(OGActionPopup *)actionPopup didDismissWithButtonIndex:(NSInteger)buttonIndex;
 
 @end
 

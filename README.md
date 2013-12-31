@@ -9,4 +9,4 @@ Tumblr-like fullscreen replacement for selecting an action (like e.g., UIActionS
 
 # Documentation
 
-Specific documentation in the headers.
+Styled after UIActionSheet. Documentation by example in the repo.
