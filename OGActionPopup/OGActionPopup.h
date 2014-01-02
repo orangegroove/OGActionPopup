@@ -22,7 +22,7 @@
 //  IN THE SOFTWARE.
 //
 
-#import <UIKit/UIKit.h>
+@import UIKit;
 #import "OGActionPopupDelegate.h"
 
 @interface OGActionPopup : UIView
