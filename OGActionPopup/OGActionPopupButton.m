@@ -93,6 +93,7 @@
 	_label.textAlignment	= NSTextAlignmentCenter;
 	_label.textColor		= self.tintColor;
 	_label.backgroundColor	= UIColor.clearColor;
+	_label.numberOfLines	= 2;
 	
 	return _label;
 }
