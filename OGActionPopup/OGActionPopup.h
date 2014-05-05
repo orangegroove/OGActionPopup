@@ -32,6 +32,7 @@
 @property (copy, nonatomic)									NSString*					cancelText;
 @property (assign, nonatomic, readonly)						NSInteger					numberOfButtons;
 @property (assign, nonatomic, readonly, getter=isVisible)	BOOL						visible;
+@property (strong, nonatomic)								NSDictionary*				userInfo;
 
 - (void)show;
 - (void)dismissWithClickedButtonIndex:(NSInteger)buttonIndex animated:(BOOL)animated;
