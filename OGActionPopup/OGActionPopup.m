@@ -25,12 +25,12 @@
 #import "OGActionPopup.h"
 #import "OGActionPopupButton.h"
 
-#define BUTTON_YPADDING				20.f
-#define TITLE_FADE_DURATION			0.3
-#define CANCELBUTTON_FADE_DURATION	0.3
-#define BACKGROUND_FADE_DURATION	0.2
-#define BUTTON_MOVE_DURATION		0.8
-#define BUTTON_MOVE_DELAY			0.1
+static const CGFloat kOGActionPopupYPadding					= 20.;
+static const CGFloat kOGActionPopupTitleFadeDuration		= 0.3;
+static const CGFloat kOGActionPopupCancelButtonFadeDuration	= 0.3;
+static const CGFloat kOGActionPopupBackgroundFadeDuration	= 0.2;
+static const CGFloat kOGActionPopupButtonMoveDuration		= 0.8;
+static const CGFloat kOGActionPopupButtonMoveDelay			= 0.1;
 
 typedef NS_ENUM(int8_t, OGActionPopupButtonState)
 {
@@ -229,7 +229,7 @@ typedef struct
 	CGFloat alpha = visible? 1.f : 0.f;
 	
 	if (animated)
-		[UIView animateWithDuration:TITLE_FADE_DURATION delay:delay options:UIViewAnimationOptionAllowAnimatedContent|UIViewAnimationOptionBeginFromCurrentState animations:^{
+		[UIView animateWithDuration:kOGActionPopupTitleFadeDuration delay:delay options:UIViewAnimationOptionAllowAnimatedContent|UIViewAnimationOptionBeginFromCurrentState animations:^{
 			
 			self.titleLabel.alpha = alpha;
 			
@@ -246,7 +246,7 @@ typedef struct
 	CGFloat y			= visible? CGRectGetHeight(self.bounds) - halfHeight : CGRectGetHeight(self.bounds) + halfHeight;
 	
 	if (animated)
-		[UIView animateWithDuration:CANCELBUTTON_FADE_DURATION delay:delay options:UIViewAnimationOptionAllowAnimatedContent|UIViewAnimationOptionBeginFromCurrentState animations:^{
+		[UIView animateWithDuration:kOGActionPopupCancelButtonFadeDuration delay:delay options:UIViewAnimationOptionAllowAnimatedContent|UIViewAnimationOptionBeginFromCurrentState animations:^{
 			
 			self.cancelButton.center = CGPointMake(self.cancelButton.center.x, y);
 			
@@ -262,7 +262,7 @@ typedef struct
 	UIColor* color = visible? [UIColor.blackColor colorWithAlphaComponent:0.8f] : UIColor.clearColor;
 	
 	if (animated)
-		[UIView animateWithDuration:BACKGROUND_FADE_DURATION delay:delay options:UIViewAnimationOptionAllowAnimatedContent|UIViewAnimationOptionBeginFromCurrentState animations:^{
+		[UIView animateWithDuration:kOGActionPopupBackgroundFadeDuration delay:delay options:UIViewAnimationOptionAllowAnimatedContent|UIViewAnimationOptionBeginFromCurrentState animations:^{
 			
 			self.backgroundColor = color;
 			
@@ -278,7 +278,7 @@ typedef struct
 	NSMutableArray* delays = [NSMutableArray array];
 	
 	for (NSInteger i = 0; i < self.buttons.count; i++) {
-		[delays addObject:@(i * BUTTON_MOVE_DELAY)];
+		[delays addObject:@(i * kOGActionPopupButtonMoveDelay)];
 	}
 	
 	if (delayIndex >= 0) {
@@ -298,7 +298,7 @@ typedef struct
 		[self addSubview:button];
 		
 		if (animated)
-			[UIView animateWithDuration:BUTTON_MOVE_DURATION delay:delay usingSpringWithDamping:0.6f initialSpringVelocity:0.5f options:UIViewAnimationOptionAllowAnimatedContent|UIViewAnimationOptionBeginFromCurrentState|UIViewAnimationOptionCurveEaseIn animations:^{
+			[UIView animateWithDuration:kOGActionPopupButtonMoveDuration delay:delay usingSpringWithDamping:0.6f initialSpringVelocity:0.5f options:UIViewAnimationOptionAllowAnimatedContent|UIViewAnimationOptionBeginFromCurrentState|UIViewAnimationOptionCurveEaseIn animations:^{
 				
 				button.center = [self centerForButtonAtIndex:i state:toState];
 				
@@ -337,12 +337,12 @@ typedef struct
 			
 		case OGActionPopupButtonStateDisplayed: {
 			
-			yoffset = CGRectGetMaxY(self.titleLabel.frame) + BUTTON_YPADDING*2;
+			yoffset = CGRectGetMaxY(self.titleLabel.frame) + kOGActionPopupYPadding*2;
 			break;
 		}
 	}
 	
-	point.y = yoffset + (row * (OGActionPopupButton.buttonSize.height + BUTTON_YPADDING)) + BUTTON_YPADDING;
+	point.y = yoffset + (row * (OGActionPopupButton.buttonSize.height + kOGActionPopupYPadding)) + kOGActionPopupYPadding;
 	
 	// x
 	CGFloat mid			= CGRectGetMidX(self.bounds);
@@ -414,7 +414,7 @@ typedef struct
 	if (_titleLabel)
 		return _titleLabel;
 	
-	CGRect frame					= {BUTTON_YPADDING, BUTTON_YPADDING, CGRectGetWidth(self.bounds) - BUTTON_YPADDING*2, 60.f};
+	CGRect frame					= {kOGActionPopupYPadding, kOGActionPopupYPadding, CGRectGetWidth(self.bounds) - kOGActionPopupYPadding*2, 60.f};
 	_titleLabel						= [[UILabel alloc] initWithFrame:frame];
 	_titleLabel.font				= [UIFont boldSystemFontOfSize:16.f];
 	_titleLabel.textAlignment		= NSTextAlignmentCenter;

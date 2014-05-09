@@ -54,7 +54,7 @@
 
 + (CGSize)buttonSize
 {
-	return CGSizeMake(60.f, 90.f);
+	return CGSizeMake(60.f, 94.f);
 }
 
 #pragma mark - Events
@@ -87,7 +87,7 @@
 	if (_label)
 		return _label;
 	
-	CGRect frame			= {0.f, 60.f, 60.f, 30.f};
+	CGRect frame			= {0.f, 60.f, 60.f, 34.f};
 	_label					= [[UILabel alloc] initWithFrame:frame];
 	_label.font				= [UIFont boldSystemFontOfSize:14.f];
 	_label.textAlignment	= NSTextAlignmentCenter;
