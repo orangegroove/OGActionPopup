@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                 = "OGActionPopup"
-  s.version              = "0.1.3"
+  s.version              = "0.1.4"
   s.summary              = "Tumblr-like fullscreen replacement for selecting an action (like e.g., UIActionSheet)"
   s.homepage             = "https://github.com/OrangeGroove/OGActionPopup"
   s.license              = { :type => "MIT" }

@@ -38,6 +38,8 @@
 - (void)dismissWithClickedButtonIndex:(NSInteger)buttonIndex animated:(BOOL)animated;
 
 - (NSInteger)addButtonWithTitle:(NSString *)title image:(UIImage *)image;
+- (NSInteger)addButtonWithTitle:(NSString *)title image:(UIImage *)image imageEdgeInsets:(UIEdgeInsets)imageEdgeInsets;
+
 - (NSString *)buttonTitleAtIndex:(NSInteger)buttonIndex;
 
 @end

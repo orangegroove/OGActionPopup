@@ -132,9 +132,15 @@ typedef struct
 
 - (NSInteger)addButtonWithTitle:(NSString *)title image:(UIImage *)image
 {
+	return [self addButtonWithTitle:title image:image imageEdgeInsets:UIEdgeInsetsZero];
+}
+
+- (NSInteger)addButtonWithTitle:(NSString *)title image:(UIImage *)image imageEdgeInsets:(UIEdgeInsets)imageEdgeInsets
+{
 	OGActionPopupButton* button = [[OGActionPopupButton alloc] init];
 	button.title				= title;
 	button.image				= image;
+	button.imageEdgeInsets		= imageEdgeInsets;
 	
 	[self.buttons addObject:button];
 	
