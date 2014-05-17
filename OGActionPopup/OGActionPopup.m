@@ -259,7 +259,7 @@ typedef struct
 
 - (void)setBackgroundColorVisible:(BOOL)visible animated:(BOOL)animated delay:(NSTimeInterval)delay
 {
-	UIColor* color = visible? [UIColor.blackColor colorWithAlphaComponent:0.8f] : UIColor.clearColor;
+	UIColor* color = visible? [UIColor.blackColor colorWithAlphaComponent:0.8] : UIColor.clearColor;
 	
 	if (animated)
 		[UIView animateWithDuration:kOGActionPopupBackgroundFadeDuration delay:delay options:UIViewAnimationOptionAllowAnimatedContent|UIViewAnimationOptionBeginFromCurrentState animations:^{
@@ -298,7 +298,7 @@ typedef struct
 		[self addSubview:button];
 		
 		if (animated)
-			[UIView animateWithDuration:kOGActionPopupButtonMoveDuration delay:delay usingSpringWithDamping:0.6f initialSpringVelocity:0.5f options:UIViewAnimationOptionAllowAnimatedContent|UIViewAnimationOptionBeginFromCurrentState|UIViewAnimationOptionCurveEaseIn animations:^{
+			[UIView animateWithDuration:kOGActionPopupButtonMoveDuration delay:delay usingSpringWithDamping:0.6 initialSpringVelocity:0.5 options:UIViewAnimationOptionAllowAnimatedContent|UIViewAnimationOptionBeginFromCurrentState|UIViewAnimationOptionCurveEaseIn animations:^{
 				
 				button.center = [self centerForButtonAtIndex:i state:toState];
 				
@@ -316,12 +316,12 @@ typedef struct
 {
 	CGPoint point;
 	NSInteger columns		= 3;
-	NSInteger rows			= (NSInteger)ceilf(self.buttons.count / (float)columns);
+	NSInteger rows			= (NSInteger)ceilf(self.buttons.count / (CGFloat)columns);
 	NSInteger column		= index % columns;
-	NSInteger row			= (NSInteger)floorf(index / (float)columns);
+	NSInteger row			= (NSInteger)floorf(index / (CGFloat)columns);
 	NSInteger lastRowStart	= columns * (rows - 1);
 	NSInteger columnsOnRow	= index < lastRowStart? columns : self.buttons.count - lastRowStart;
-	CGFloat yoffset			= 0.f;
+	CGFloat yoffset			= 0.;
 	
 	// y
 	switch (state) {
@@ -414,8 +414,17 @@ typedef struct
 	if (_titleLabel)
 		return _titleLabel;
 	
-	CGRect frame					= {kOGActionPopupYPadding, kOGActionPopupYPadding, CGRectGetWidth(self.bounds) - kOGActionPopupYPadding*2, 60.f};
-	_titleLabel						= [[UILabel alloc] initWithFrame:frame];
+	_titleLabel = [[UILabel alloc] initWithFrame:({
+		
+		CGRect frame		= CGRectZero;
+		frame.origin.x		= kOGActionPopupYPadding;
+		frame.origin.y		= kOGActionPopupYPadding;
+		frame.size.width	= CGRectGetWidth(self.bounds) - kOGActionPopupYPadding*2;
+		frame.size.height	= 60.;
+		
+		frame;
+	})];
+	
 	_titleLabel.font				= [UIFont boldSystemFontOfSize:16.f];
 	_titleLabel.textAlignment		= NSTextAlignmentCenter;
 	_titleLabel.textColor			= self.tintColor;
@@ -432,9 +441,17 @@ typedef struct
 	if (_cancelButton)
 		return _cancelButton;
 	
-	_cancelButton					= [UIButton buttonWithType:UIButtonTypeCustom];
-	_cancelButton.frame				= CGRectMake(0.f, CGRectGetHeight(self.bounds), CGRectGetWidth(self.bounds), 50.f);
-	_cancelButton.backgroundColor	= [UIColor.blackColor colorWithAlphaComponent:0.2f];
+	_cancelButton = [[UIButton alloc] initWithFrame:({
+		
+		CGRect frame		= CGRectZero;
+		frame.origin.y		= CGRectGetHeight(self.bounds);
+		frame.size.width	= CGRectGetWidth(self.bounds);
+		frame.size.height	= 50.;
+		
+		frame;
+	})];
+	
+	_cancelButton.backgroundColor	= [UIColor.blackColor colorWithAlphaComponent:0.2];
 	_cancelButton.autoresizingMask	= UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleTopMargin;
 	
 	[_cancelButton setTitleColor:self.tintColor forState:UIControlStateNormal];

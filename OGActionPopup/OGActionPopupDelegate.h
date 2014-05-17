@@ -23,9 +23,7 @@
 //
 
 @import Foundation;
-
-@class
-OGActionPopup;
+@class OGActionPopup;
 
 @protocol OGActionPopupDelegate <NSObject>
 @optional

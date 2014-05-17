@@ -26,8 +26,9 @@
 
 @interface OGActionPopupButton : UIView
 
-@property (strong, nonatomic)	UIImage*	image;
-@property (copy, nonatomic)		NSString*	title;
+@property (strong, nonatomic)	UIImage*		image;
+@property (copy, nonatomic)		NSString*		title;
+@property (assign, nonatomic)	UIEdgeInsets	imageEdgeInsets;
 
 + (CGSize)buttonSize;
 

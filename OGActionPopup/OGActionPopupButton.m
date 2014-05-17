@@ -22,7 +22,7 @@
 //  IN THE SOFTWARE.
 //
 
-#import <QuartzCore/QuartzCore.h>
+@import QuartzCore;
 #import "OGActionPopupButton.h"
 
 @interface OGActionPopupButton ()
@@ -37,7 +37,7 @@
 
 - (id)init
 {
-	CGRect frame = {0.f, 0.f, OGActionPopupButton.buttonSize};
+	CGRect frame = {0., 0., OGActionPopupButton.buttonSize};
 	
 	if (self = [super initWithFrame:frame]) {
 		
@@ -54,7 +54,7 @@
 
 + (CGSize)buttonSize
 {
-	return CGSizeMake(60.f, 94.f);
+	return CGSizeMake(60., 94.);
 }
 
 #pragma mark - Events
@@ -72,11 +72,11 @@
 	if (_imageView)
 		return _imageView;
 	
-	CGRect frame					= {0.f, 0.f, 60.f, 60.f};
-	_imageView						= [[UIImageView alloc] initWithFrame:frame];
-	_imageView.layer.cornerRadius	= 30.f;
+	_imageView						= [[UIImageView alloc] initWithFrame:CGRectMake(0., 0., 60., 60.)];
+	_imageView.backgroundColor		= UIColor.clearColor;
+	_imageView.layer.cornerRadius	= 30.;
 	_imageView.layer.borderColor	= self.tintColor.CGColor;
-	_imageView.layer.borderWidth	= 2.f;
+	_imageView.layer.borderWidth	= 2.;
 	_imageView.layer.masksToBounds	= YES;
 	
 	return _imageView;
@@ -87,9 +87,8 @@
 	if (_label)
 		return _label;
 	
-	CGRect frame			= {0.f, 60.f, 60.f, 34.f};
-	_label					= [[UILabel alloc] initWithFrame:frame];
-	_label.font				= [UIFont boldSystemFontOfSize:14.f];
+	_label					= [[UILabel alloc] initWithFrame:CGRectMake(0., 60., 60., 34.)];
+	_label.font				= [UIFont boldSystemFontOfSize:14.];
 	_label.textAlignment	= NSTextAlignmentCenter;
 	_label.textColor		= self.tintColor;
 	_label.backgroundColor	= UIColor.clearColor;
@@ -116,6 +115,21 @@
 - (NSString *)title
 {
 	return self.label.text;
+}
+
+- (void)setImageEdgeInsets:(UIEdgeInsets)imageEdgeInsets
+{
+	_imageEdgeInsets		= imageEdgeInsets;
+	self.imageView.frame	= ({
+		
+		CGRect frame		= CGRectZero;
+		frame.origin.x		= imageEdgeInsets.left;
+		frame.origin.y		= imageEdgeInsets.top;
+		frame.size.width	= 60. - imageEdgeInsets.left - imageEdgeInsets.right;
+		frame.size.height	= 60. - imageEdgeInsets.top - imageEdgeInsets.bottom;
+		
+		frame;
+	});
 }
 
 @end
